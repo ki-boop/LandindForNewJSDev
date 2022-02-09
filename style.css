@@ -1,0 +1,117 @@
+.header{
+    width: 100%;
+    height: 100px;
+    background-color: yellow;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-size: 70px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 5px;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    
+
+}
+
+.conteiner{
+    margin-top: 50px;
+    display: flex;
+    
+}
+.inform{
+    width: 400px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+   
+}
+.name{
+    width: auto;
+    height: 50px;
+    text-align: center;
+    font-size: 30px;
+    border-left: 2px solid black;
+
+}
+
+.information{
+    width: auto;
+    margin-top: 10px;
+    height: 200px;
+    padding: 10px;
+    border-left: 2px solid black;
+    text-align: center;
+   
+}
+.menu{
+    display: flex;
+   
+}
+
+.person{
+    display: none;
+    width: 100px;
+    height: 20px;
+    position: absolute;
+    top: 20px;
+    left: 1400px;
+    font-size: 20px;
+    letter-spacing: 0px;
+}
+
+
+
+.task{
+    width: 200px;
+    height: 30px;
+    border: 2px solid black;
+    background-color: yellow;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    font-size: 20px;
+    transition : all .3s linear;
+}
+.task:hover{
+    background-color: black;
+    cursor: pointer;
+    color: yellow;
+}
+
+.description{
+    color: black;
+    display: none;
+    position: relative;
+    width: 200px;
+    height: 120px;
+    margin-left: -2px;
+    margin-top: 8px;
+    background-color: black;
+    border: 2px solid black;
+    transition : all .3s linear;
+    font-size: 15px;
+
+}
+.description:hover{
+    color: yellow;
+    background-color: black;
+    transition : all .3s linear;
+}
+
+#example,#q,#ow{
+    border-left: 0px;
+}
+#example,#q{
+    margin-top: 50px;
+}
+#q{
+    margin-bottom: 50px;
+}
+
+::-webkit-scrollbar{
+    width: 0px;
+    }
+
