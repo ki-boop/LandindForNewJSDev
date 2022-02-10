@@ -14,7 +14,9 @@
     border-top: 3px solid black;
     display: flex;
 }
-
+body{
+    overflow-x: hidden;
+}
 .exersize1{
     font-size: 30px;
     margin-left: 65%;
@@ -182,14 +184,27 @@ a{
     height: 260px;
     display: flex;
 }
+
+#first-floor{
+    margin-top: 30px;
+    display: none;
+}
+
+#second-floor{
+    display: none;
+    margin-top: 20px;
+    margin-left: 100px;
+}
 .quest{
-    width: 180px;
+   
+    width: 300px;
     height: auto;
     margin-left: 10px;
     background-color: yellow;
     border: 2px solid black;
     margin-left: auto;
     margin-right: auto;
+    border-radius: 20px 20px 10px 10px;
 
     
 }
@@ -201,6 +216,8 @@ a{
     background-color: yellow;
     border-bottom: 2px solid black;
     text-align: center;
+    padding-top: 10px;
+    border-radius: 20px 20px 4px 4px;
 }
 .answers{
     font-size: 18px;
@@ -226,12 +243,13 @@ a{
 }
 
 .button{
-    width: 70px;
+
+    width: auto;
     height: 20px;
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    border: 2px solid black;
+    
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
     background-color: yellow;
     transition: all .3s linear;
     margin-top: 20px;
@@ -239,8 +257,57 @@ a{
 .button:hover{
     cursor: pointer;
     background-color: black;
-    color: yellow;
-    
+    color: yellow; 
+}
+
+#butt-low{
+    margin-top: 27%;
+
+}
+
+.scoreTest{
+    display: none;
+    width: 100px;
+    height: 50px;
+    padding-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid black;
+    text-align: center;
+    font-size: 30px;
+}
+.end{
+    width: 100%;
+    height: 100px;
+}
+.animate{
+    display: none;
+    position:absolute;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background-image: url("2.jpg");
+    left: 0px;
+    text-align: center;
+}
+
+#animate{
+    opacity: 0.5;
+    position: absolute;
+    display: none;
+    font-size: 200px;
+}
+
+#placeName{
+margin-top: 10%;
+}
+img{
+    display: none;
+   width: 100%;
+   height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
 }
 
 
