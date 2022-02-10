@@ -9,6 +9,9 @@
 </head>
 <body> 
     <div class="header"> JavaScript
+        <div class="exersize1">Тест</div>
+        <div class="exersize"><a href="#tasks">Задачи</a></div>
+        
 
         <div class="person" id = 'person'></div>
     </div>
@@ -38,20 +41,20 @@
     
 
     <div class="start-tests">
-        <div class="name" id='q'> Теперь приступим к показу возможностей JavaScript</div>
+        <div class="name" id='q'> <a name = "tasks"></a>Теперь приступим к показу возможностей JavaScript</div>
 
         <div class="menu">
             <div class="task" id = 'task0' onclick ="task0()" >0 <div class="description" id = 'des0'>Для того, чтобы получить данные от пользователя, используйте функцию promt. Для сохранения введенной строки, используй LocalStorage. </div></div>
         </div>
         <div class="menu">
-            <div class="task" id = 'task1' onclick ="task1()">1 <div class="description" id = 'des1'>sad</div></div>
-            <div class="task" id = 'task2' onclick ="task2()">2 <div class="description" id = 'des2'>sad</div></div>
-            <div class="task" id = 'task3'onclick ="task3()">3 <div class="description" id = 'des3'>sad</div></div>
+            <div class="task" id = 'task1' onclick ="task1()">1 <div class="description" id = 'des1'>С помощью функции prompt, получите данные. Проверьте данные на пустые и отрицательные значения. А результат верните с помощью функции alert.</div></div>
+            <div class="task" id = 'task2' onclick ="task2()">2 <div class="description" id = 'des2'>У объектов есть свои свойства и методы. Так, вы можете узнать длины строк: str.length, а потом сравнить их длины. (str1.length == str2.length)</div></div>
+            <div class="task" id = 'task3'onclick ="task3()">3 <div class="description" id = 'des3'>Спросите у пользователя 5 чисел. Добавьте их в массив с помощью метода push().   Потом выведете max при помощи Math.max(... arr) и min Math.mix(... arr). </div></div>
             
         </div>
        <div class="menu">
-        <div class="task" id = 'task4' >4 <div class="description" id = 'des4'>sad</div></div>
-        <div class="task" id = 'task5'>5 <div class="description" id = 'des5'>sad</div></div>
+        <div class="task" id = 'task4' onclick ="task4()">4 <div class="description" id = 'des4'>Пример таймера. Чтобы сделать подобный функционал подобятся знания вызова функции при нажатии и конструкция SetInterval().</div></div>
+        <div class="task" id = 'task5'>5 <div class="description" id = 'des5'></div></div>
         <div class="task" id = 'task6'>6 <div class="description" id = 'des6'>sad</div></div>
        </div>
         
@@ -59,6 +62,88 @@
 
 
     <div class="name" id='example'>Примеры кода, просмотренных задач</div>
+
+    <div class="timer" id="timer">
+        <div class="time" id = 'time'>0:0</div>
+        <div class="buttons">
+            <div class="start" onclick="start()">START</div>
+            <div class="stop" onclick="task4Stop()">STOP</div>
+    </div>
+    </div>
+
+
+    <div class="test">
+        <div class="quest"><div class="textQ">Когда появился JavaScript?</div> 
+                   <div class="answers"><input type="radio" id="a" name="q1" value="1995">1995</div>
+                   <div class="answers"> <input type="radio" id="a" name="q1" value="1990">1990</div>  
+                   <div class="answers"><input type="radio" id="a" name="q1" value="1991">1991</div>
+                   <div class="answers"><input type="radio" id="a" name="q1" value="1996">1996</div>  
+                <div class="button">Ответить</div>
+        </div>
+        <div class="quest"><div class="textQ">JavaScript язык, используемый в ... </div> 
+                   <div class="answers"><input type="radio" id="a" name="q2" value="Хорошо">веб-приложениях</div>
+                   <div class="answers"> <input type="radio" id="a" name="q2" value="Плохо">базах данных</div>  
+                   <div class="answers"><input type="radio" id="a" name="q2" value="Хорошо">ИИ</div>
+                   <div class="answers"><input type="radio" id="a" name="q2" value="Хорошо">настройка сервера</div>  
+                <div class="button">Ответить</div>
+        </div>
+        <div class="quest"><div class="textQ">Тип переменной в JavaScript</div> 
+                   <div class="answers"><input type="radio" id="a" name="q3" value="Хорошо">int</div>
+                   <div class="answers"> <input type="radio" id="a" name="q3" value="Плохо">let</div>  
+                   <div class="answers"><input type="radio" id="a" name="q3" value="Хорошо">char</div>
+                   <div class="answers"><input type="radio" id="a" name="q3" value="Хорошо">ArrayList</div>  
+                <div class="button">Ответить</div>
+        </div>
+        <div class="quest"><div class="textQ">Что обозначает знак: &&</div> 
+                   <div class="answers"><input type="radio" id="a" name="q4" value="Хорошо">умножение</div>
+                   <div class="answers"> <input type="radio" id="a" name="q4" value="Плохо">логическое И</div>  
+                   <div class="answers"><input type="radio" id="a" name="q4" value="Хорошо">логическое ИЛИ</div>
+                   <div class="answers"><input type="radio" id="a" name="q4" value="Хорошо">ошибку</div>  
+                <div class="button">Ответить</div>
+        </div>
+        <div class="quest"><div class="textQ">Запуск всплывающего окна:</div> 
+                   <div class="answers"><input type="radio" id="a" name="q5" value="Хорошо">нет варианта</div>
+                   <div class="answers"> <input type="radio" id="a" name="q5" value="Плохо">info("Hi")</div>  
+                   <div class="answers"><input type="radio" id="a" name="q5" value="Хорошо">alert("Hi")</div>
+                   <div class="answers"><input type="radio" id="a" name="q5" value="Хорошо">new alert ("Hi")</div>  
+                <div class="button">Ответить</div>
+        </div>
+        <div class="quest"><div class="textQ">Выберите примитив из списка</div> 
+                   <div class="answers"><input type="radio" id="a" name="q6" value="Хорошо">null</div>
+                   <div class="answers"><input type="radio" id="a" name="q6" value="Плохо">length</div>  
+                   <div class="answers"><input type="radio" id="a" name="q6" value="Хорошо">Array</div>
+                   <div class="answers"><input type="radio" id="a" name="q6" value="Хорошо">Nan</div>  
+                <div class="button">Ответить</div>
+        </div>
+        <div class="quest"><div class="textQ">Директива const означает</div> 
+                   <div class="answers"><input type="radio" id="a" name="q7" value="Хорошо">видимость</div>
+                   <div class="answers"> <input type="radio" id="a" name="q7" value="Плохо">неизменямость</div>  
+                   <div class="answers"><input type="radio" id="a" name="q7" value="Хорошо">цвет</div>
+                   <div class="answers"><input type="radio" id="a" name="q7" value="Хорошо">шрифт</div>  
+                <div class="button">Ответить</div>
+        </div>
+        <div class="quest"><div class="textQ">Как обозначается ложное значение?</div> 
+                   <div class="answers"><input type="radio" id="a" name="q8" value="Хорошо">Null</div>
+                   <div class="answers"> <input type="radio" id="a" name="q8" value="Плохо">Error</div>  
+                   <div class="answers"><input type="radio" id="a" name="q8" value="Хорошо">Nan</div>
+                   <div class="answers"><input type="radio" id="a" name="q8" value="Хорошо">undefind</div>  
+                <div class="button">Ответить</div>
+        </div>
+        <div class="quest"><div class="textQ">Как у тебя дела?</div> 
+                   <div class="answers"><input type="radio" id="a" name="q9" value="Хорошо">Хорошо</div>
+                   <div class="answers"> <input type="radio" id="a" name="q9" value="Плохо">Плохо</div>  
+                   <div class="answers"><input type="radio" id="a" name="q9" value="Хорошо">Норм</div>
+                   <div class="answers"><input type="radio" id="a" name="q9" value="Хорошо">Заебись</div>  
+                <div class="button">Ответить</div>
+        </div>
+        <div class="quest"><div class="textQ">Как у тебя дела?</div> 
+                   <div class="answers"><input type="radio" id="a" name="q10" value="Хорошо">Хорошо</div>
+                   <div class="answers"> <input type="radio" id="a" name="q10" value="Плохо">Плохо</div>  
+                   <div class="answers"><input type="radio" id="a" name="q10" value="Хорошо">Норм</div>
+                   <div class="answers"><input type="radio" id="a" name="q10" value="Хорошо">Заебись</div>  
+                <div class="button">Ответить</div>
+        </div>
+    </div>
 
     <script src="describes.js"></script>
     <script src="script.js"></script>

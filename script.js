@@ -39,7 +39,42 @@ const task3 = () =>{
             return
         }
     }
-    alert(Math.max(... arr))
+    
+    alert("Max " + Math.max(... arr) + " Min " + Math.min(... arr))
+}
+
+let time = document.getElementById('time');
+let pause = false;
+let sec=0,min =0;
+let inter;
+const task4 =()=>{
+    let timer = document.getElementById('timer');
+    timer.style.display = 'block';
+}
+
+const task4Start = () =>{
+    
+    if (!pause){
+        sec++;
+        if (sec<10) sec = '0'+sec;
+        if (sec == 60){
+          min++;
+          sec = 0;
+        }
+        time.innerHTML = min + ":" + sec;
+    }else return;
+         
+}
+const start = () =>{
+    sec=0;
+    min=0;
+    pause=false
+    inter = setInterval(task4Start,1000);
+}
+const task4Stop = () =>{
+    pause=true;
+    clearInterval(inter);
+    return;
 }
     
 
