@@ -1,313 +1,297 @@
-
-
-.header{
-    
-    width: 100%;
-    height: 80px;
-    background-color: yellow;
-    padding-top: 0px;
-    padding-bottom: 10px;
-    font-size: 70px;
-    font-weight: 300;
-    padding-left: 50px;
-    border-left: 2px solid black;
-    border-top: 3px solid black;
-    display: flex;
+.header {
+  width: 100%;
+  height: 80px;
+  background-color: yellow;
+  padding-top: 0px;
+  padding-bottom: 10px;
+  font-size: 70px;
+  font-weight: 300;
+  padding-left: 50px;
+  border-left: 2px solid black;
+  border-top: 3px solid black;
+  display: flex;
 }
-body{
-    overflow-x: hidden;
+body {
+  overflow-x: hidden;
 }
-.exersize1{
-    font-size: 30px;
-    margin-left: 65%;
-    margin-top: 40px;
+.exersize1 {
+  font-size: 30px;
+  margin-left: 65%;
+  margin-top: 40px;
 }
-.exersize{
-    font-size: 30px;
-    margin-left: 1%;
-    margin-top: 40px;
+.exersize {
+  font-size: 30px;
+  margin-left: 1%;
+  margin-top: 40px;
 }
-a{
-    text-decoration: none;
-    color: black;
+a {
+  text-decoration: none;
+  color: black;
 }
-.exersize1:hover, .exersize:hover {
-    text-decoration: underline;
-    cursor: pointer;
+.exersize1:hover,
+.exersize:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
-.conteiner{
-    margin-top: 50px;
-    display: flex;
-    
+.conteiner {
+  margin-top: 50px;
+  display: flex;
+  margin-bottom: 20px;
 }
-.inform{
-    width: 100%;
-    height: 300px;
-    margin-left: auto;
-    margin-right: auto;
-   
+.inform {
+  width: 100%;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
 }
-.name{
-    width: 100%;
-    height: 50px;
-    text-align: center;
-    font-size: 30px;
-    border-left: 2px solid black;
-
+.name {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  font-size: 30px;
+  border-left: 2px solid black;
 }
 
-.information{
-    width: 100%;
-    margin-top: 10px;
-    height: 200px;
-    padding: 0px;
-    border-left: 2px solid black;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-
-   
+.information {
+  width: 100%;
+  margin-top: 10px;
+  height: auto;
+  max-height: min-content;
+  padding: 0px;
+  border-left: 2px solid black;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
-.menu{
-    display: flex;
-   
-}
-
-.person{
-    display: none;
-    width: 100px;
-    height: 20px;
-    position: absolute;
-    top: 20px;
-    left: 1400px;
-    font-size: 20px;
-    letter-spacing: 0px;
+.menu {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-
-
-.task{
-    width: 200px;
-    height: 30px;
-    border: 2px solid black;
-    background-color: yellow;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 20px;
-    padding-top: 10px;
-    font-size: 20px;
-    transition : all .3s linear;
-}
-.task:hover{
-    background-color: black;
-    cursor: pointer;
-    color: yellow;
+.start-test {
+  margin-top: 30px;
 }
 
-.description{
-    color: black;
-    display: none;
-    position: relative;
-    width: 200px;
-    height: 120px;
-    margin-left: -2px;
-    margin-top: 8px;
-    background-color: black;
-    border: 2px solid black;
-    transition : all .3s linear;
-    font-size: 15px;
-
-}
-.description:hover{
-    color: yellow;
-    background-color: black;
-    transition : all .3s linear;
+.person {
+  display: none;
+  width: 100px;
+  height: 20px;
+  position: absolute;
+  top: 20px;
+  left: 1400px;
+  font-size: 20px;
+  letter-spacing: 0px;
 }
 
-#example,#q,#ow{
-    border-left: 0px;
+.task {
+  width: 200px;
+  height: 30px;
+  border: 2px solid black;
+  background-color: yellow;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  padding-top: 10px;
+  font-size: 20px;
+  transition: all 0.3s linear;
 }
-#example,#q{
-    margin-top: 50px;
-}
-#q{
-    margin-bottom: 50px;
-}
-
-::-webkit-scrollbar{
-    width: 0px;
-    }
-
-.timer{
-    display: none;
-    position: fixed;
-    top: 90%;
-    left: 88%;
-    width: 200px;
-    height: 50px;
-    background-color: white;
-}
-.time{
-    text-align: center;
-    font-size: 25px;
-    background-color: black;
-    color: yellow;
-}
-.buttons{
-    display: flex;
-}
-.start{
-    background-color: green;
-
-}
-.stop{
-    background-color: red;
-    }
-.start,.stop{
-    width: 100px;
-    height: 20px;
-    text-align: center;
-    color: white;
-    border: 2px solid white;
-    background-color: black;
-    
-}
-.start:hover, .stop:hover{
-    cursor: pointer;
-    color: yellow;
+.task:hover {
+  background-color: black;
+  cursor: pointer;
+  color: yellow;
 }
 
-.test{
-    width: auto;
-    height: 260px;
-    display: flex;
+.description {
+  color: black;
+  display: none;
+  position: relative;
+  width: 200px;
+  height: 120px;
+  margin-left: -2px;
+  margin-top: 8px;
+  background-color: black;
+  border: 2px solid black;
+  transition: all 0.3s linear;
+  font-size: 15px;
+}
+.description:hover {
+  color: yellow;
+  background-color: black;
+  transition: all 0.3s linear;
 }
 
-#first-floor{
-    margin-top: 30px;
-    display: none;
+#example,
+#q,
+#ow {
+  border-left: 0px;
+}
+#example,
+#q {
+  margin-top: 50px;
+}
+#q {
+  margin-bottom: 50px;
 }
 
-#second-floor{
-    display: none;
-    margin-top: 20px;
-    margin-left: 100px;
-}
-.quest{
-   
-    width: 300px;
-    height: auto;
-    margin-left: 10px;
-    background-color: yellow;
-    border: 2px solid black;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 20px 20px 10px 10px;
-
-    
-}
-.textQ{
-    width: auto;
-    height: 45px;
-    font-size: 20px;
-    margin-bottom: 20px;
-    background-color: yellow;
-    border-bottom: 2px solid black;
-    text-align: center;
-    padding-top: 10px;
-    border-radius: 20px 20px 4px 4px;
-}
-.answers{
-    font-size: 18px;
+::-webkit-scrollbar {
+  width: 0px;
 }
 
-.answers input{
-    width: 30px;
-    cursor: pointer;
-    height: 20px;
-    
+.timer {
+  display: none;
+  position: fixed;
+  top: 90%;
+  left: 88%;
+  width: 200px;
+  height: 50px;
+  background-color: white;
+}
+.time {
+  text-align: center;
+  font-size: 25px;
+  background-color: black;
+  color: yellow;
+}
+.buttons {
+  display: flex;
+}
+.start {
+  background-color: green;
+}
+.stop {
+  background-color: red;
+}
+.start,
+.stop {
+  width: 100px;
+  height: 20px;
+  text-align: center;
+  color: white;
+  border: 2px solid white;
+  background-color: black;
+}
+.start:hover,
+.stop:hover {
+  cursor: pointer;
+  color: yellow;
 }
 
-.answers input:checked:before{
-    content: "";
-    display: block;
-    position: relative;
-    top: 3px;
-    left: 8px;
-    width: 14px;
-    height: 14px;
-    border-radius: 50%;
-    background: black;
-}
-
-.button{
-
-    width: auto;
-    height: 20px;
-    text-align: center;
-    
-    border-bottom: 2px solid black;
-    border-top: 2px solid black;
-    background-color: yellow;
-    transition: all .3s linear;
-    margin-top: 20px;
-}
-.button:hover{
-    cursor: pointer;
-    background-color: black;
-    color: yellow; 
-}
-
-#butt-low{
-    margin-top: 27%;
-
-}
-
-.scoreTest{
-    display: none;
-    width: 100px;
-    height: 50px;
-    padding-top: 15px;
-    margin-left: auto;
-    margin-right: auto;
-    border: 2px solid black;
-    text-align: center;
-    font-size: 30px;
-}
-.end{
-    width: 100%;
-    height: 100px;
-}
-.animate{
-    display: none;
-    position:absolute;
-    top: 0px;
-    width: 100%;
-    height: 100%;
-    background-image: url("2.jpg");
-    left: 0px;
-    text-align: center;
-}
-
-#animate{
-    opacity: 0.5;
-    position: absolute;
-    display: none;
-    font-size: 200px;
-}
-
-#placeName{
-margin-top: 10%;
-}
-img{
-    display: none;
-   width: 100%;
-   height: 100%;
-    position: absolute;
-    left: 0px;
-    top: 0px;
+.test {
+  width: auto;
+  height: 260px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 
+.quest {
+  width: 300px;
+  height: auto;
+  margin-left: 10px;
+  background-color: yellow;
+  border: 2px solid black;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px 20px 10px 10px;
+  margin-top: 20px;
+}
+.textQ {
+  width: auto;
+  height: 45px;
+  font-size: 20px;
+  margin-bottom: 20px;
+  background-color: yellow;
+  border-bottom: 2px solid black;
+  text-align: center;
+  padding-top: 10px;
+  border-radius: 20px 20px 4px 4px;
+}
+.answers {
+  font-size: 18px;
+}
+
+.answers input {
+  width: 30px;
+  cursor: pointer;
+  height: 20px;
+}
+
+.answers input:checked:before {
+  content: "";
+  display: block;
+  position: relative;
+  top: 3px;
+  left: 8px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: black;
+}
+
+.button {
+  width: auto;
+  height: 20px;
+  text-align: center;
+
+  border-bottom: 2px solid black;
+  border-top: 2px solid black;
+  background-color: yellow;
+  transition: all 0.3s linear;
+  margin-top: 20px;
+}
+.button:hover {
+  cursor: pointer;
+  background-color: black;
+  color: yellow;
+}
+
+#butt-low {
+  margin-top: 27%;
+}
+
+.scoreTest {
+  display: none;
+  width: 100px;
+  height: 50px;
+  padding-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid black;
+  text-align: center;
+  font-size: 30px;
+}
+.end {
+  width: 100%;
+  height: 100px;
+}
+.animate {
+  display: none;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background-image: url("2.jpg");
+  left: 0px;
+  text-align: center;
+}
+
+#animate {
+  opacity: 0.5;
+  position: absolute;
+  display: none;
+  font-size: 200px;
+}
+
+#placeName {
+  margin-top: 10%;
+}
+img {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
