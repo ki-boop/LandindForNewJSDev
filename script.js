@@ -4,13 +4,13 @@ var score = 0;
 
 const task0 = () => {
   let name = prompt("Как вас зовут?");
-  console.log(name);
+
   if (isNaN(name)) {
     alert("Hello, " + name);
     sessionStorage.setItem("Name", JSON.stringify(name));
     personeName.style.display = "block";
     personeName.innerText = name;
-  } else task0();
+  } else alert("Неправильный формат ввода");
 };
 
 const task1 = () => {
@@ -19,15 +19,26 @@ const task1 = () => {
   let res = (foundation * height) / 2;
   if (!isNaN(res) && foundation > 0 && height > 0)
     alert("Площадь треугольника: " + res);
-  else alert("Вы указали неправильные числа");
+  else alert("Неправильный формат ввода");
 };
 
 const task2 = () => {
   alert("Провека длины двух строк");
   let str1 = prompt("Первая строка");
   let str2 = prompt("Вторая строка");
-  if (str1.length == str2.length) alert("Строки одинаковой длины");
-  else alert("Строки разной длины");
+  if (
+    str1 === null ||
+    str1 === undefined ||
+    str1 === NaN ||
+    str2 === null ||
+    str2 === undefined ||
+    str2 === NaN
+  )
+    alert("Неправильный формат ввода");
+  else {
+    if (str1.length == str2.length) alert("Строки одинаковой длины");
+    else alert("Строки разной длины");
+  }
 };
 
 const task3 = () => {
@@ -63,12 +74,15 @@ const task4Start = () => {
       sec = 0;
     }
     time.innerHTML = min + ":" + sec;
-  } else return;
+  } else {
+    return;
+  }
 };
 const start = () => {
   sec = 0;
   min = 0;
   pause = false;
+  clearInterval(inter);
   inter = setInterval(task4Start, 1000);
 };
 const task4Stop = () => {
@@ -76,38 +90,37 @@ const task4Stop = () => {
   clearInterval(inter);
   return;
 };
-
+var test = document.querySelector(".test");
 const task5 = () => {
-  let test1 = document.getElementById("second-floor");
-  test1.style.display = "flex";
-  let test2 = document.getElementById("first-floor");
-  test2.style.display = "flex";
+  test.style.display = "flex";
 };
-
 const testButt = (numTask) => {
   let block = document.getElementById("scoreTest");
   block.style.display = "block";
   let answer = document.getElementById("a" + numTask);
   let curr = document.getAnimations("a");
-  console.log(numTask);
   if (answer.checked && answer.value == 0) {
     score++;
-    answer.parentNode.parentNode.childNodes[0].style.backgroundColor = "green";
+    answer.parentNode.parentNode.childNodes[1].style.backgroundColor =
+      "rgb(61, 209, 31)";
     answer.value = 1;
   }
   if (!answer.checked && answer.value == 1) {
     if (
-      answer.parentNode.parentNode.childNodes[0].style.backgroundColor ==
-      "green"
+      answer.parentNode.parentNode.childNodes[1].style.backgroundColor ==
+      "rgb(61, 209, 31)"
     )
       score--;
-    answer.parentNode.parentNode.childNodes[0].style.backgroundColor = "red";
+    answer.parentNode.parentNode.childNodes[1].style.backgroundColor = "red";
     answer.value = 0;
   }
   if (!answer.checked) {
-    answer.parentNode.parentNode.childNodes[0].style.backgroundColor = "red";
+    answer.parentNode.parentNode.childNodes[1].style.backgroundColor = "red";
   }
   block.innerText = score + "/10";
+  if (block.textContent == "10/10") {
+    alert("Поздравляем! Вы правильно ответили на все вопросы)");
+  }
 };
 
 const enterName = () => {};
@@ -122,14 +135,11 @@ const task6 = () => {
   placeDate.innerText =
     new Date().getDate() +
     "." +
-    new Date().getMonth() +
+    (new Date().getMonth() + 1) +
     "." +
     new Date().getFullYear();
   place.innerText = name;
   img.addEventListener("click", (event) => {
-    console.log(k);
-    console.log(ii);
-
     const timerI = setInterval(() => {
       ii = 80;
       k++;

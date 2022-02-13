@@ -31,6 +31,7 @@ idtask0.addEventListener("mouseover", (event) => {
     typeWriter();
     count = 1;
   }
+
   des0.style.display = "block";
 });
 

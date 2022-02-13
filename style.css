@@ -11,7 +11,6 @@
   border-top: 3px solid black;
   display: flex;
   flex-wrap: wrap;
-  
 }
 body {
   overflow-x: hidden;
@@ -40,13 +39,14 @@ a {
   margin-top: 50px;
   display: flex;
   margin-bottom: 20px;
+
+  justify-content: space-around;
 }
 .inform {
   width: 100%;
-  height: 300px;
-  margin-left: auto;
-  margin-right: auto;
+  height: 100%;
 }
+
 .name {
   width: 100%;
   height: auto;
@@ -76,7 +76,7 @@ a {
 }
 
 .person {
- display: none;
+  display: none;
   width: 220px;
   text-align: center;
   height: 20px;
@@ -114,13 +114,14 @@ a {
   margin-top: 8px;
   background-color: black;
   border: 2px solid black;
-  transition: all 0.3s linear;
+  transition: all 0.3s ease-in;
   font-size: 15px;
 }
 .description:hover {
   color: yellow;
   background-color: black;
   transition: all 0.3s linear;
+  height: 120px;
 }
 
 #example,
@@ -158,7 +159,7 @@ a {
 }
 .buttons {
   display: flex;
-  flex-wrap:wrap;
+  flex-wrap: wrap;
   flex-direction: row;
 }
 .start,
@@ -179,10 +180,9 @@ a {
 .test {
   width: auto;
   height: 260px;
-  display: flex;
+  display: none;
   flex-wrap: wrap;
 }
-
 
 .quest {
   width: 300px;
@@ -205,6 +205,7 @@ a {
   text-align: center;
   padding-top: 10px;
   border-radius: 20px 20px 4px 4px;
+  transition: background-color 0.6s ease-in;
 }
 .answers {
   font-size: 18px;
@@ -236,7 +237,7 @@ a {
   border-bottom: 2px solid black;
   border-top: 2px solid black;
   background-color: yellow;
-  transition: all 0.3s linear;
+  transition: all 0.6s ease-in;
   margin-top: 20px;
 }
 .button:hover {
