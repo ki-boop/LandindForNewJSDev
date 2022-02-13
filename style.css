@@ -76,8 +76,8 @@ a {
 }
 
 .person {
- 
-  width: 270px;
+ display: none;
+  width: 220px;
   text-align: center;
   height: 20px;
   margin-top: 20px;
@@ -141,7 +141,7 @@ a {
 }
 
 .timer {
-
+  display: none;
   font-size: 20px;
   width: auto;
   height: 50px;
