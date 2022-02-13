@@ -14,6 +14,7 @@
 }
 body {
   overflow-x: hidden;
+  caret-color: transparent;
 }
 .exersize1 {
   font-size: 30px;
